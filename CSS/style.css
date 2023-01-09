@@ -1,3 +1,11 @@
 html{
-    color: #ee0044;;
+    color: #e00;
+    background-color: #000;
+    background-image: url(https://github.com/larvakent.png);
+}
+main{
+    background-color: #fff;
+}
+.titulo-aula{
+    background-color: chartreuse;
 }
