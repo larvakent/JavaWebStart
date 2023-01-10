@@ -1,5 +1,4 @@
-html{
-    color: #e00;
-    background-color: #000;
-    background-image: url(https://github.com/larvakent.png);
+@font-face {
+    font-family: alexbrush;
+    src: url('AlexBrush-Regular.ttf');
 }
