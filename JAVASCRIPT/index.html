@@ -4,25 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>evento alteração</title>
+    <title>evento carregamento</title>
     
     <!--JS-->
     <script>
     
        function mensagem() {
-            var curso = document.getElementById("cursos").value;
-            alert(curso);
+            alert("Seja bem vindo ao meu site");
        }
 
     </script>
 </head>
-<body>
-    <select onchange="mensagem()" id="cursos">
-        <option>Escolha seu curso</option>
-        <option>HTML</option>
-        <option>CSS</option>
-        <option>JavaScript</option>
+<body onload="mensagem()">
 
-    </select>
 </body>
 </html>
