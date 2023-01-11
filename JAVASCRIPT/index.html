@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>evento carregamento</title>
+    <title>evento teclado</title>
     
     <!--JS-->
     <script>
     
-       function mensagem() {
-            alert("Seja bem vindo ao meu site");
+       /*
+       onKeyUP: exibe o caractere e depois executa a ação.
+       onKeyDown: primeiro executa a ação e depois exibe o caractere.
+       onKeyPress: primeiro executa a ação e depois exibe o caractere.
+       ^ não tem suporte a teclas como: F1, F2, ALT, CTRL, SHIFT...
+       */
+
+       function exibir() {
+        var campo = document.getElementById("campo").value;
+        alert(campo);
        }
 
     </script>
 </head>
-<body onload="mensagem()">
-
+<body>
+    <input type="text" id="campo" onkeyup="exibir()">
 </body>
 </html>
