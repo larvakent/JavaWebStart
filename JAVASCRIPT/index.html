@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Condicional Simples</title>
+    <title>Condicional Aninhada</title>
     <!--JS-->
     <script>
-        //Variavel
-        var idade = 19;
+        //Média
+        var media = 8.5;
 
         //Condicional
-        if(idade>=idade){
-            window.alert("Aprovado");
-        } else {
-            window.alert("Reprovado");
+        if(media == 10){
+            alert("Parabens!");
+        } else if(media >= 9){
+            alert("Ótimo!");
+        } else if(media >= 8){
+            alert("Bom");
+        } else if(media >= 7){
+            alert("na média");
+        } else if (media >= 5) {
+            alert("Em exame");
+        } else{
+            alert("Reprovado");
         }
     </script>
 </head>
