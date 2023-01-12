@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seletor ID</title>
+    <title>CSS</title>
     <script>
 
-       function exibirConteudo() {
-            var campo = document.getElementById("campo");
-            //exibir conteudo
-            alert(campo.value);
-            //apagar conteudo
-            campo.value = "";
+        function acao() {
+            //obter o elemento h1
+            var texto = document.getElementsByTagName("h1")[0];
+            //css
+            texto.style.color = "#FF0000";
+            texto.style.fontSize = "20px";
 
-
-       }
+            //alterar o conteúdo
+            texto.innerHTML = "Curso de JavaScript";
+        }
 
     </script>
 </head>
 <body>
-    <input type="text" id="campo">
-    <button onclick="exibirConteudo()">Clique aqui</button>
+    <h1>JavaScript</h1>
+    <button onclick="acao()">Clique aqui</button>
 </body>
 </html>
