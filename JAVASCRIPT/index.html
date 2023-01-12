@@ -4,24 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>Atributos</title>
     <script>
 
-        function acao() {
-            //obter o elemento h1
-            var texto = document.getElementsByTagName("h1")[0];
-            //css
-            texto.style.color = "#FF0000";
-            texto.style.fontSize = "20px";
-
-            //alterar o conteúdo
-            texto.innerHTML = "Curso de JavaScript";
+        function alterarLink() {
+            var link = document.getElementsByTagName("a")[0];
+            //alterar o link
+            link.href = "https://google.com";
         }
 
     </script>
 </head>
 <body>
-    <h1>JavaScript</h1>
-    <button onclick="acao()">Clique aqui</button>
+   <a href="https://proway.com.br">Clique aqui</a>
+   <button onclick="alterarLink()">alterar link</button>
 </body>
 </html>
