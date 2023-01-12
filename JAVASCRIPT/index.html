@@ -4,25 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seletor HTML</title>
+    <title>Seletor CLASSE</title>
     <script>
 
-        function acao() {
-            var texto = document.getElementsByTagName("h1")[0];
-
-            //exibir o conteudo do h1
-            alert(texto.innerHTML);
-        }
+       function exibirTexto() {
+        //armazenar a tag com a classe texto
+        var campo = document.getElementsByClassName("texto")[2];
+       }
 
     </script>
 </head>
 <body>
+    <button onclick="exibirTexto()">Clique aqui</button>
 
-    <button onclick="acao()">Selecionar</button>
-
-    <h1>Proway</h1>
-    <h1>Seletores JS</h1>
-    <h1>Curso Proway</h1>
-
+    <h1 class="texto">título em h1 </h1>
+    <h2 class="texto">título em h2</h2>
+    <p class="texto">paragrafo</p>
 </body>
 </html>
