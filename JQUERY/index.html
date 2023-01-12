@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
+    <title>Exibir e Ocultar</title>
     <!--jQuery-->
     <script src="jquery-3.6.3.min.js"></script>
 
@@ -13,10 +13,14 @@
 
         //ao carregar o documento
         $(document).ready(function(){
-           //evento de clique
-           $("button").click(function(){
-            //adicionar um texto no h1
-            $("h1").html("Você clicou no botão");
+           //exibir
+           $("#exibir").click(function(){
+            $("img").show();
+           });
+
+           //ocultar
+           $("#ocultar").click(function(){
+            $("img").hide();
            });
 
         });
@@ -24,7 +28,11 @@
     </script>
 </head>
 <body>
-   <h1></h1>
-   <button>Clique Aqui</button>
+   <button id="exibir">Exibir</button>
+   <button id="ocultar">Ocultar</button>
+
+   <br>
+
+   <img src="proway-logotipo.svg" width="200" alt="logo ProWay">
 </body>
 </html>
