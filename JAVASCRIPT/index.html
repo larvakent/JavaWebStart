@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seletor CLASSE</title>
+    <title>Seletor ID</title>
     <script>
 
-       function exibirTexto() {
-        //armazenar a tag com a classe texto
-        var campo = document.getElementsByClassName("texto")[2];
-        alert(campo.innerHTML);
+       function exibirConteudo() {
+            var campo = document.getElementById("campo");
+            //exibir conteudo
+            alert(campo.value);
+            //apagar conteudo
+            campo.value = "";
+
+
        }
 
     </script>
 </head>
 <body>
-    <button onclick="exibirTexto()">Clique aqui</button>
-
-    <h1 class="texto">título em h1 </h1>
-    <h2 class="texto">título em h2</h2>
-    <p class="texto">paragrafo</p>
+    <input type="text" id="campo">
+    <button onclick="exibirConteudo()">Clique aqui</button>
 </body>
 </html>
