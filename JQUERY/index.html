@@ -4,15 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animate</title>
+    <title>CSS</title>
 
     <!--CSS-->
     <style>
-        div{
-            width: 100px;
-            height: 100px;
-            background-color: aqua;
-        }
+       
     </style>
 
     <!--jQuery-->
@@ -23,12 +19,10 @@
 
         //ao carregar o documento
         $(document).ready(function(){
-          //efeito
-          $("button").click(function(){
-            $("div").animate({
-                width:"400px",
-                heigth:"400px"
-            });
+          $("h1").css({
+            "color":"red",
+            "borderStyle":"solid",
+            "borderColor":"green"
           });
 
         });
@@ -36,8 +30,6 @@
     </script>
 </head>
 <body>
-   <button>Clique aqui</button>
-
-   <div></div>
+    <h1>Utilizando CSS com jQuery</h1>
 </body>
 </html>
