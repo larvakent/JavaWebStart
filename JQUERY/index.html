@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fade</title>
+    <title>Slide</title>
     <!--jQuery-->
     <script src="jquery-3.6.3.min.js"></script>
 
@@ -13,33 +13,23 @@
 
         //ao carregar o documento
         $(document).ready(function(){
-          //ocultar h1
-          $("h1").css("display","none");
+            //ocultar
+            $(".ocultar").click(function(){
+                $(".mensagem").slideUp();
+            });
 
-          //exibir o h1
-          $("#exibir").click(function(){
-            $("h1").fadeIn("slow");
-          });
-
-          $("#ocultar").click(function(){
-            $("h1").fadeOut(2000);
-          });
-
-          /*
-          TEMPO
-          1° default 0,4
-          2° slow 0,6
-          3° valor 
-          */
+            //exibir
+            $(".exibir").click(function(){
+                $(".mensagem").slideDown();
+            });
         });
 
     </script>
 </head>
 <body>
-    <button id="exibir">Exibir</button>
-    <button id="ocultar">Ocultar</button>
-
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1>
     <hr>
-    <h1>Aprendendo jQuery</h1>
+    <h1 class="mensagem">Olá!</h1>
 </body>
 </html>
