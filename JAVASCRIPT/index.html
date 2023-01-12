@@ -4,26 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>evento teclado</title>
-    
-    <!--JS-->
+    <title>Seletor HTML</title>
     <script>
-    
-       /*
-       onKeyUP: exibe o caractere e depois executa a ação.
-       onKeyDown: primeiro executa a ação e depois exibe o caractere.
-       onKeyPress: primeiro executa a ação e depois exibe o caractere.
-       ^ não tem suporte a teclas como: F1, F2, ALT, CTRL, SHIFT...
-       */
 
-       function exibir() {
-        var campo = document.getElementById("campo").value;
-        alert(campo);
-       }
+        function acao() {
+            var texto = document.getElementsByTagName("h1")[0];
+
+            //exibir o conteudo do h1
+            alert(texto.innerHTML);
+        }
 
     </script>
 </head>
 <body>
-    <input type="text" id="campo" onkeyup="exibir()">
+
+    <button onclick="acao()">Selecionar</button>
+
+    <h1>Proway</h1>
+    <h1>Seletores JS</h1>
+    <h1>Curso Proway</h1>
+
 </body>
 </html>
